@@ -10,10 +10,11 @@ def cigar(num,winnum)
 	counter
 end
 
-def cigarr(mytickarray, winningtick)
-	ret = []
-mytickarray.each do |ticket|
-	 ret = cigar(ticket, winningtick)
-	 ret << cigar(ticket, winningtick)
-end	
- 
+	def cigarr(mytickarray, winningtick)
+		ret = []
+		mytickarray.each do |ticket|
+	 		ret = cigar(ticket, winningtick)
+		 		ret << cigar(ticket, winningtick)
+	end	
+	ret
+end
