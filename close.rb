@@ -13,12 +13,14 @@ end
 	def cigarr(mytickarray, winningtick)
 		ret = []
 		mytickarray.each do |ticket|
-	 		ret = cigar(ticket, winningtick)
 		 		ret << cigar(ticket, winningtick)
 	end	
 	ret
 end
-	def moretickets() 
-		
+	def moretickets(other, winningtick) 
+		ret =[]
+		other.each do |ticket|
+			ret << cigar(ticket, winningtick)
 	end
+	ret
 end
